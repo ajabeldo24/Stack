@@ -1,1 +1,1 @@
-# Stack
+This lab enqueues and dequeues elements in last in first out order. This includes pop, push, and peek for the stack program.
