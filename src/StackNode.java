@@ -5,7 +5,7 @@
 
 public class StackNode<T> {
     //variables
-    private T Data; //creating instance data and a child node
+    private T data; //creating instance data and a child node
     private StackNode<T> child;
 
     //constructors
@@ -13,22 +13,22 @@ public class StackNode<T> {
 
     }
 
-    public StackNode(T Data) { //constructor with data
-        this.Data = Data;
+    public StackNode(T data) { //constructor with data
+        this.data = data;
     }
 
-    public StackNode(StackNode<T> child, T Data) { //constructor with child node and data
+    public StackNode(StackNode<T> child, T data) { //constructor with child node and data
         this.child = child;
-        this.Data = Data;
+        this.data = data;
     }
 
     //Methods and accessors
     public T getData() { //data accessor method
-        return this.Data;
+        return this.data;
     }
 
-    public void setData(T Data) { //mutator for the data
-        this.Data = Data;
+    public void setData(T data) { //mutator for the data
+        this.data = data;
     }
 
     public StackNode<T> getChild () { //child accessor method
@@ -41,7 +41,7 @@ public class StackNode<T> {
 
     //other methods
     public String toString () {
-        String datasout = " " + Data;
+        String datasout = " " + data;
         String childsout = " " + child;
         return "Data: " + datasout + " Child: " + childsout;
     }
